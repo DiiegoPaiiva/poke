@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <script src="../assets/js/color-modes.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.111.3">
+  <title>ZooPoke</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+
+
+
+  <link rel="icon" href="Imagens/pokelogo.png" type="image/x-icon">
+
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
+
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-warning">
+      <div class="container-fluid">
+        <a class="navbar-brand text-primary" href="index.html"><img src="Imagens/pokeparty.png"
+            style="width: 100px; height: auto;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Pokédex</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Notícias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Guias e Dicas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Comunidade</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Loja</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="text">
+            <input class="form-control me-2" type="text" placeholder="Login" aria-label="Login"
+              style="background-color: rgba(30, 118, 250, 0.705);">
+            <input class="form-control me-2" type="password" placeholder="Senha" aria-label="Senha"
+              style="background-color: rgba(30, 118, 250, 0.705);">
+            <a class="btn btn-outline-primary me-2" href="PokeParty.html">Entrar</a>
+            <a class="btn btn-outline-success me-2" href="PokeParty.html">Registrar</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active"
+          style="background-image: url('Imagens/pokefundo.jpg'); background-position: center">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Descubra o Mundo Pokémon</h1>
+              <p>Explore a incrível variedade de Pokémon e embarque em aventuras emocionantes em diferentes regiões.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Explore mais</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item"
+          style="background-image: url('Imagens/logapoke.jpg'); background-position: center; background-size: 100% 100%;">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Capture os melhores Pokémons</h1>
+              <p>Adquira Pokémons raros e lendários para fortalecer sua equipe e se tornar um mestre Pokémon.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Compre agora</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item"
+          style="background-image: url('Imagens/poke1.jpg'); background-position: center; background-size: 100% 100%;">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Faça parte da nossa comunidade</h1>
+              <p>Junte-se a uma comunidade ativa de usuários e compartilhe suas experiências conosco.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Registre-se</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="Imagens/pokedex.jfif"
+            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice"
+            focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>
+          <h2 class="fw-normal">Pokédex</h2>
+          <p>A Pokédex é uma enciclopédia digital que cataloga informações sobre os Pokémon.</p>
+          <p>Com a Pokédex, os treinadores podem obter dados detalhados sobre cada Pokémon, incluindo suas habilidades,
+            estatísticas, evoluções e muito mais.</p>
+          <p><a class="btn btn-secondary" onclick="mostrarMais()">Saiba mais &raquo;</a></p>
+          <div id="detalhesPokedex" style="display: none;">
+            <p>A Pokédex é uma ferramenta essencial para os treinadores Pokémon, fornecendo informações abrangentes
+              sobre todas as espécies de Pokémon existentes.</p>
+            <p>Ela também registra os encontros do treinador com os Pokémon ao longo de sua jornada, mantendo um
+              registro completo de todas as capturas e observações.</p>
+            <p>Através da Pokédex, os treinadores podem planejar estratégias de batalha, identificar fraquezas e pontos
+              fortes dos Pokémon e expandir seus conhecimentos sobre o mundo Pokémon.</p>
+          </div>
+        </div>
+
+        <script>
+          function mostrarMais() {
+            var detalhesPokedex = document.getElementById("detalhesPokedex");
+            if (detalhesPokedex.style.display === "none") {
+              detalhesPokedex.style.display = "block";
+            } else {
+              detalhesPokedex.style.display = "none";
+            }
+          }
+        </script>
+
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="Imagens/poketip.jpg"
+            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice"
+            focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>
+          <h2 class="fw-normal">Tipos de Pokemons</h2>
+          <p>"Tipo", são classificações a que estão submetidos todos os Pokémon e técnicas.</p>
+          <p>Atualmente existem 18 tipos, sendo que dois deles foram introduzidos na segunda geração (Sombrio e
+            Metálico), e o último foi criado na sexta geração (Fada).</p>
+          <p><a class="btn btn-secondary" onclick="mostrarMais2()">Saiba mais &raquo;</a></p>
+          <div id="detalhesPokedex2" style="display: none;">
+            <p>A partir dos tipos, além de ser possível conhecer um pouco mais a natureza de cada Pokémon, dá também
+              para elaborar estratégias de batalha.</p>
+            <p>Isso porque cada tipo tem vantagens e desvantagens sobre outros tipos. O Tipo Fantasma, por exemplo, é
+              super efetivo contra Psíquico e Fantasma, é pouco efetivo contra Sombrio e Metálico, e não tem efeito
+              sobre o tipo Normal.</p>
+            <p>Cada Pokémon pode pertencer a até dois tipos, sendo o primeiro deles o primário e o outro, o secundário.
+              Charizard, por exemplo, é Fogo/Voador, enquanto que Pikachu é apenas Elétrico (é um Pokémon Elétrico
+              puro). </p>
+          </div>
+        </div>
+
+        <script>
+          function mostrarMais2() {
+            var detalhesPokedex2 = document.getElementById("detalhesPokedex2");
+            if (detalhesPokedex2.style.display === "none") {
+              detalhesPokedex2.style.display = "block";
+            } else {
+              detalhesPokedex2.style.display = "none";
+            }
+          }
+        </script>
+
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="Imagens/pokevolution.webp"
+            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice"
+            focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          <h2 class="fw-normal">Evolução</h2>
+          <p>A evolução é uma parte fundamental dos jogos Pokémon. Pokémon em evolução os torna mais fortes e frequentes
+            dá-lhes um movimento mais amplo.</p>
+          <p>Várias espécies de Pokémon só podem ser obtidas através de evolução.</p>
+          <p><a class="btn btn-secondary" onclick="mostrarMais3()">Saiba mais &raquo;</a></p>
+          <div id="detalhesPokedex3" style="display: none;">
+            <p>Existem vários métodos de evolução, com mais variações sendo adicionadas a cada jogo. Em
+              Vermelho/Azul/Amarelo, um Pokémon pode evoluir treinando-o até um certo nível, aplicando-se uma pedra
+              elementar, ou negociação via link de cabo.</p>
+            <p>Em Ouro/Prata/Cristal, métodos adicionais foram adicionados, ou seja, nível de amizade e negociação com
+              um item mantido.</p>
+            <p>Jogos posteriores adicionados ainda mais com base em coisas como gênero, hora do dia ou depois que um
+              determinado movimento é aprendido.</p>
+          </div>
+        </div>
+        <script>
+          function mostrarMais3() {
+            var detalhesPokedex3 = document.getElementById("detalhesPokedex3");
+            if (detalhesPokedex3.style.display === "none") {
+              detalhesPokedex3.style.display = "block";
+            } else {
+              detalhesPokedex3.style.display = "none";
+            }
+          }
+        </script>
+
+        <!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- Char, Bulba, Scuartle -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Bulbassauro<span class="text-body-secondary">Tipo:
+              Grama/Venenoso</span></h2>
+          <p class="lead">Bulbassauro é um pequeno Pokémon anfíbio quadrúpede de pele azul-esverdeada com manchas mais
+            escuras. Tem olhos vermelhos com pupilas brancas, orelhas pontiagudas no topo de sua cabeça e um focinho
+            curto e rombudo acima de sua larga boca. Possui em cada uma de suas pernas grossas três garras afiadas. Nas
+            costas de Bulbassauro há um grande bulbo de planta verde, que é cultivado a partir de uma semente plantada
+            em seu nascimento. O bulbo também esconde duas videiras semelhantes a tentáculos.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="Imagens/bulbasaur.jpg" alt="Imagem do Bulbassauro"
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+        </div>
+      </div>
+
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img src="Imagens/charmander2.jpg" alt="Imagem do Bulbassauro"
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Charmander<span class="text-body-secondary">Tipo:
+              Fogo</span></h2>
+          <p class="lead">Charmander é um Pokémon do tipo Fogo. Ele é conhecido como o Pokémon Lagarto de Fogo e é um
+            dos Pokémon iniciais da região de Kanto. Charmander possui uma aparência semelhante à de um pequeno lagarto
+            com uma chama acesa na ponta de sua cauda. Sua pele é de cor laranja brilhante, com uma barriga amarela. Ele
+            tem olhos azuis e garras afiadas em suas patas dianteiras.</p>
+        </div>
+
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Squirtle<span class="text-body-secondary">Tipo:
+              Água</span></h2>
+          <p class="lead">Squirtle é um Pokémon aquático que se assemelha a uma pequena tartaruga com uma carapaça dura
+            em suas costas. Sua pele é azul clara e sua carapaça possui uma corcova escura no centro. Ele possui grandes
+            olhos castanhos e orelhas curtas. Sua boca é ligeiramente aberta, dando a impressão de um sorriso amigável.
+            Squirtle possui pequenas mãos e pés com três garras cada.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="Imagens/squartle.jpg" alt="Imagem do Bulbassauro"
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="height: 400px;">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-end"><a href="#">Volte ao início</a></p>
+      <p>&copy; 2017–2023 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+  </main>
+
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
