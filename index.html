@@ -1,47 +1,70 @@
-<!DOCTYPE html>
-
-<html>
+<!doctype html>
+<html lang="pt">
 
 <head>
-  <title>Pokemon Fest</title>
   <meta charset="utf-8">
-  <script src="https://kit.fontawesome.com/989798bf5f.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-  <link rel="stylesheet" type="text/css" href="estilo.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu site</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      height: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url("mywebsite/Imagens/poke1.jpg");
+
+    }
+
+    .container {
+      text-align: center;
+  max-width: 400px;
+  margin-top: 250px;
+  padding: 20px;
+  background-image: url("mywebsite/Imagens/pokefundo.jpg");
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o contêiner */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h1 {
+      text-align: center;
+    }
+
+    .container button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .container button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 
 <body>
 
-  <div>
-    <a href="mywebsite/index.html"> <img src="Imagens/pokeparty.png" width="250"> </a>
-    <a href="TiposPokemon.html"> <img src="Imagens/tipos.png" id="direita"></a>
-  </div>
-  <div class="tenor-gif-embed" data-postid="15629921" data-share-method="host" data-aspect-ratio="1" data-width="35%"
-    class="esquerda"><a
-      href="https://tenor.com/view/pokemon-detective-pikachu-pikachu-magnifying-glass-cute-gif-15629921">Pokemon
-      Detective Pikachu GIF</a>from <a href="https://tenor.com/search/pokemon-gifs">Pokemon GIFs</a>
+  <div class="container">
+    <h1>Página de Entrada</h1>
+    <button onclick="redirectToPage2()">Ir para a página principal</button>
   </div>
 
-
-
-
-  <div id="circularMenu1" class="circular-menu circular-menu-left active">
-
-    <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
-      <i class="fa fa-bars"></i>
-    </a>
-
-    <menu class="items-wrapper">
-      <a href="SobrePokemons.html" class="menu-item fa-solid fa-building-user"></a>
-      <a href="Pokemons.html" class="menu-item fa-solid fa-dragon"></a>
-      <a href="PreçosPokemon.html" class="menu-item fa-solid fa-comment-dollar"></a>
-      <a href="Contatos.html" class="menu-item fa-solid fa-scroll"></a>
-    </menu>
-
-  </div>
-
-
+  <script>
+    function redirectToPage2() {
+      // Redirecione para a próxima página quando o botão for clicado
+      window.location.href = "mywebsite/index.html";
+    }
+  </script>
 </body>
 
 </html>
