@@ -9,9 +9,9 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.111.3">
-  <title>PokeWiki</title>
+  <title>FreeLive</title>
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
-  <link rel="icon" href="Imagens/pokelogo.png" type="image/x-icon">
+  <link rel="icon" href="Imagens/flmini.png" type="image/x-icon">
   <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
   <style>
     .bd-placeholder-img {
@@ -111,46 +111,51 @@
     </symbol>
   </svg>
   <header data-bs-theme="dark">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-warning">
+    <nav class="navbar bg-body-tertiary navbar fixed-top" aria-label="Light offcanvas navbar">
       <div class="container-fluid">
-        <a class="navbar-brand text-primary" href="index.html"><img src="Imagens/pokeparty.png"
-            style="width: 100px; height: auto;"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html"><img src="Imagens/flogo.png"
+          style="width: 100px; height: auto;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarLight" aria-controls="offcanvasNavbarLight" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link text-primary" href="#">Pokédex</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary" href="#">Notícias</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary" href="#">Guias e Dicas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary" href="#">Galeria</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary" href="#">Comunidade</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary" href="#">Loja</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="text">
-            <input class="form-control me-2" type="text" placeholder="Login" aria-label="Login"
-              style="background-color: rgba(30, 118, 250, 0.705);">
-            <input class="form-control me-2" type="password" placeholder="Senha" aria-label="Senha"
-              style="background-color: rgba(30, 118, 250, 0.705);">
-            <a class="btn btn-outline-primary me-2" href="PokeParty.html">Entrar</a>
-            <a class="btn btn-outline-success me-2" href="PokeParty.html">Registrar</a>
-          </form>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarLight" aria-labelledby="offcanvasNavbarLightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLightLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index1.html">Direitos básicos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index2.html">Programas governamentais</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index3.html">Legislação</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index4.html">Recursos e contatos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index5.html">Ultimas notícias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index6.html">Perguntas frequentes (FAQ)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index7.html">Sobre nós</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
         </div>
       </div>
     </nav>
+    
   </header>
 
   <main>
@@ -164,44 +169,47 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active"
-          style="background-image: url('Imagens/pokefundo.jpg'); background-position: center">
+          style="background-image: url('Imagens/slide1.png'); background-position: center; background-size: cover;">
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
           </svg>
           <div class="container">
             <div class="carousel-caption text-start">
-              <h1>Descubra o Mundo Pokémon</h1>
-              <p>Explore a incrível variedade de Pokémon e embarque em aventuras emocionantes em diferentes regiões.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Explore mais</a></p>
+              <h1>Bem-vindo ao FreeLive</h1>
+              <p>Este é um espaço dedicado a informar e educar as pessoas sobre seus direitos. Nosso objetivo é capacitar os indivíduos, fornecendo informações claras e acessíveis para que possam compreender e reivindicar seus direitos de forma efetiva.</p>
+              <p>Explore nossas categorias e descubra uma ampla gama de direitos, incluindo direitos trabalhistas, direitos do consumidor, direitos civis e muito mais. Estamos aqui para ajudá-lo a entender seus direitos e como exercê-los em diferentes situações.</p>
+              <p><a class="btn btn-lg btn-primary" href="index7.html">Saiba mais</a></p>
             </div>
           </div>
         </div>
         <div class="carousel-item"
-          style="background-image: url('Imagens/logapoke.jpg'); background-position: center; background-size: 100% 100%;">
+          style="background-image: url('Imagens/slide2.png'); background-position: center; background-size: 100% 100%;">
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
           </svg>
           <div class="container">
             <div class="carousel-caption text-start">
-              <h1>Capture os melhores Pokémons</h1>
-              <p>Adquira Pokémons raros e lendários para fortalecer sua equipe e se tornar um mestre Pokémon.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Compre agora</a></p>
+              <h1>Conheça seus direitos</h1>
+              <p>Nosso site oferece informações detalhadas sobre uma variedade de direitos em diferentes áreas da vida, como trabalho, moradia, saúde, educação e muito mais. Queremos ajudá-lo a compreender os detalhes específicos de cada direito, fornecendo explicações claras e exemplos práticos.</p>
+              <p>Explore nossos artigos e guias abrangentes, que abordam questões comuns relacionadas a cada direito. Navegue por nossas seções e aprofunde-se no conhecimento para estar preparado e tomar decisões informadas em várias situações.</p>
+              <p><a class="btn btn-lg btn-primary" href="index1.html">Conheça mais</a></p>
             </div>
           </div>
         </div>
         <div class="carousel-item"
-          style="background-image: url('Imagens/poke1.jpg'); background-position: center; background-size: 100% 100%;">
+          style="background-image: url('Imagens/slide3.png'); background-position: center; background-size: 100% 100%;">
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
           </svg>
           <div class="container">
             <div class="carousel-caption text-start">
-              <h1>Faça parte da nossa comunidade</h1>
-              <p>Junte-se a uma comunidade ativa de usuários e compartilhe suas experiências conosco.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Registre-se</a></p>
+              <h1>Fique atualizado</h1>
+              <p>No nosso site, você encontrará uma seção dedicada às últimas notícias e atualizações relacionadas a direitos. Mantenha-se informado sobre novas leis, casos importantes, mudanças nas regulamentações e outros eventos relevantes que possam impactar seus direitos.</p>
+              <p>Nossa equipe de especialistas monitora constantemente as mudanças legais e analisa seu impacto na vida cotidiana. Oferecemos análises aprofundadas e insights relevantes para ajudá-lo a compreender as implicações e tomar medidas adequadas para proteger seus direitos.</p>
+              <p><a class="btn btn-lg btn-primary" href="index5.html">Leia mais</a></p>
             </div>
           </div>
         </div>
